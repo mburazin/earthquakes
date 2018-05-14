@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{.PageTitle}}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- {{block "styles" .}}{{end}} -->
+    <!-- <link rel="stylesheet" media="screen and (max-width:900px)" href="css/under900.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700"> -->
+    <base target="_blank">
+ </head>
+ <body>
+    {{template "_header.html" .}}
+    {{template "content" .}}
+    {{template "_footer.html" .}}
+    <!-- {{block "scripts" .}}{{end}} -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/googleMap.js"></script>
+    <script src="js/main.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDTiLmx4zT-eNxs2ERAaDIRjiQ98JpcWeQ&v=3&callback=GoogleMap.init">
+    </script>
+ </body>
+</html>
