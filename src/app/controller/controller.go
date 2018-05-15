@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"earthquakes/src/app/model"
+	"app/model"
 	"html/template"
 	"net/http"
 )

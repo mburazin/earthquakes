@@ -8,8 +8,8 @@ import (
 	"os"
 	"time"
 
-	"earthquakes/src/app/controller"
-	"earthquakes/src/app/model"
+	"app/controller"
+	"app/model"
 )
 
 const (

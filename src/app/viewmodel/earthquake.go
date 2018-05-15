@@ -1,7 +1,7 @@
 package viewmodel
 
 import (
-	"earthquakes/src/app/model"
+	"app/model"
 	"time"
 )
 

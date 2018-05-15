@@ -1,8 +1,8 @@
 package controller
 
 import (
-	"earthquakes/src/app/model"
-	"earthquakes/src/app/viewmodel"
+	"app/model"
+	"app/viewmodel"
 	"encoding/json"
 	"html/template"
 	"net/http"

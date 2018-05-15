@@ -55,7 +55,7 @@
         });
     
 
-        marker.id = quake.ID;
+        marker.id = quake["id"];
         marker.addListener('click', function() {
           $.get("/earthquake/" + marker.id, function(data, status) {
             $('#quake-details-list').replaceWith(data);

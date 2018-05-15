@@ -8,14 +8,21 @@
 
     <link rel="stylesheet" href="css/style.css">
     <!-- {{block "styles" .}}{{end}} -->
-    <!-- <link rel="stylesheet" media="screen and (max-width:900px)" href="css/under900.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width:750px)" href="css/under750.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700"> -->
+    <link rel="stylesheet" media="screen and (max-width:750px)" href="css/under750.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Skranji" rel="stylesheet">
+
     <base target="_blank">
  </head>
  <body>
+  <div class="column-wrapper">
     {{template "_header.html" .}}
-    {{template "content" .}}
-    {{template "_footer.html" .}}
+    <div class="row-wrapper">
+      {{template "content" .}}
+    </div>
+      {{template "_footer.html" .}}
+  </div>
     <!-- {{block "scripts" .}}{{end}} -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/googleMap.js"></script>
