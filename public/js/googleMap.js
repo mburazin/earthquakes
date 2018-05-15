@@ -58,7 +58,12 @@
         marker.id = quake["id"];
         marker.addListener('click', function() {
           $.get("/earthquake/" + marker.id, function(data, status) {
-            $('#quake-details-list').replaceWith(data);
+            // on after getting the ajax response,
+            // replace the element with fading effect
+            $('#quake-details-list').fadeOut("slow", function() {
+              $('#quake-details-list').replaceWith(data);
+              $('#quake-details-list').fadeIn("slow");
+            });
           });
         });
 

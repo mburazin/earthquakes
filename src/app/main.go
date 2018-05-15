@@ -14,7 +14,7 @@ import (
 
 const (
 	usgsDayURL            = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
-	usgsDataFetchInterval = 5 * time.Second
+	usgsDataFetchInterval = 5 * time.Minute
 )
 
 func main() {

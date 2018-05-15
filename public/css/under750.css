@@ -1,10 +1,23 @@
+h1 {
+    font-size: 30px;
+}
+
 /* Google Map container */
 #map {
     width: 100%;
-    margin: 0 10px;
+    min-height: 350px;
 }
 
 .quake-section {
-    margin: 10px;
-    width: calc(100% - 20px);
+    margin: 30px 0;
+    width: 100%;
+    min-height: 70px;
+}
+
+#quake-details-list {
+    min-height: 90px;
+}
+
+.quake-details-item {
+    font-size: 12px;
 }
