@@ -2,7 +2,6 @@ h1 {
     font-size: 30px;
 }
 
-/* Google Map container */
 #map {
     width: 100%;
     min-height: 350px;

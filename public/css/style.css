@@ -1,3 +1,4 @@
+/* General styles */
 * {
     box-sizing: border-box;
 }
@@ -9,6 +10,8 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+/* Heading styles */
 header {
     height: 15%;
     background-color: rgb(183, 211, 189);
@@ -31,11 +34,12 @@ h2 {
     font-size: 12px;
 }
 
-
 .alert {
     color: rgb(207, 31, 31);
 }
 
+
+/* Layout related styles */
 .column-wrapper {
     min-height: 100%;
     display: -webkit-flex;
@@ -52,7 +56,6 @@ h2 {
     flex-wrap: wrap;
 }
 
-/* Google Map container */
 #map {
     width: 65%;
 }
