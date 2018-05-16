@@ -5,11 +5,10 @@
 (function() {
     var map;
     var markers = [];
-    var infoWindow;
-  
+
     /**
      * Initialize the Google Map used to show earthquake locations
-     * @function setPosition
+     * @function init
      */
     function init() {
       // create a new map
@@ -20,7 +19,7 @@
 
       // Perform a HTTP GET request to the API to get earthquake data
       $.get("/api/earthquakes", function(data, status) {
-        arr = $.parseJSON(data);
+        var arr = $.parseJSON(data);
         _refreshEarthquakes(arr);
 
         // create a websocket to the server to update the map with new earthquakes
@@ -36,7 +35,7 @@
             console.log("Error on a websocket: " + e.message);
         });
       });
-  
+
     }
 
     /**
@@ -49,13 +48,13 @@
 
       earthquakes.forEach(function(quake) {
         var marker = new google.maps.Marker({
-          position: {lat: quake["lat"], lng: quake["lng"]},
-          title: quake["place"],
+          position: {lat: quake.lat, lng: quake.lng},
+          title: quake.place,
           animation: google.maps.Animation.DROP
         });
-    
 
-        marker.id = quake["id"];
+
+        marker.id = quake.id;
         marker.addListener('click', function() {
           $.get("/earthquake/" + marker.id, function(data, status) {
             // on after getting the ajax response,
