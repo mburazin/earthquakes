@@ -43,4 +43,4 @@ This project is licensed under the terms of the MIT license. For more informatio
 * Google Maps:
     - https://cloud.google.com/maps-platform/
 * GO programming language:
--    - https://golang.org/
+    - https://golang.org/
